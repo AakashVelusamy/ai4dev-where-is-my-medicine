@@ -867,3 +867,69 @@
 2026-03-08 22:40:15,260 - go-pharmacy - INFO - TabletRecognizerService initialized (Connected to Qdrant Cloud: tablets)
 2026-03-08 22:40:18,915 - go-pharmacy - INFO - SymptomSearchService initialized (Connected to Qdrant Cloud: symptoms)
 2026-03-08 22:40:18,924 - go-pharmacy - INFO - Starting Where is my Medicine? API...
+2026-03-08 23:40:24,965 - go-pharmacy - INFO - --> Incoming API Request: POST /api/tablet-photo | Query: 
+2026-03-08 23:40:25,037 - go-pharmacy - INFO - Processing tablet photo upload: avastin.jpg
+2026-03-08 23:40:26,945 - go-pharmacy - INFO - Loading Vision model for tablet recognition...
+2026-03-08 23:40:27,559 - go-pharmacy - INFO - Identifying tablet image...
+2026-03-08 23:40:34,174 - go-pharmacy - INFO - <-- Outgoing API Response: POST /api/tablet-photo | Status: 200 | Time: 9.211s
+2026-03-08 23:40:34,180 - go-pharmacy - INFO - --> Incoming API Request: GET /api/search-medicine | Query: q=Prandial+M+0.3+Tablet
+2026-03-08 23:40:34,182 - go-pharmacy - INFO - Medicine search query: Prandial M 0.3 Tablet
+2026-03-08 23:40:34,223 - go-pharmacy - INFO - <-- Outgoing API Response: GET /api/search-medicine | Status: 200 | Time: 0.044s
+2026-03-08 23:40:34,228 - go-pharmacy - INFO - --> Incoming API Request: GET /api/pharmacies-nearby | Query: medicine=Prandial+M+0.3+Tablet&lat=11.0168&lon=76.9558
+2026-03-08 23:40:34,246 - go-pharmacy - INFO - Finding nearby pharmacies for medicine: Prandial M 0.3 Tablet at (11.0168, 76.9558) within 5km
+2026-03-08 23:40:36,800 - go-pharmacy - INFO - <-- Outgoing API Response: GET /api/pharmacies-nearby | Status: 200 | Time: 2.572s
+2026-03-08 23:40:47,774 - go-pharmacy - INFO - --> Incoming API Request: POST /api/tablet-photo | Query: 
+2026-03-08 23:40:47,776 - go-pharmacy - INFO - Processing tablet photo upload: avastin.jpg
+2026-03-08 23:40:48,646 - go-pharmacy - INFO - Identifying tablet image...
+2026-03-08 23:40:49,362 - go-pharmacy - INFO - <-- Outgoing API Response: POST /api/tablet-photo | Status: 200 | Time: 1.589s
+2026-03-08 23:40:49,366 - go-pharmacy - INFO - --> Incoming API Request: GET /api/search-medicine | Query: q=Prandial+M+0.3+Tablet
+2026-03-08 23:40:49,366 - go-pharmacy - INFO - Medicine search query: Prandial M 0.3 Tablet
+2026-03-08 23:40:49,397 - go-pharmacy - INFO - <-- Outgoing API Response: GET /api/search-medicine | Status: 200 | Time: 0.031s
+2026-03-08 23:40:49,402 - go-pharmacy - INFO - --> Incoming API Request: GET /api/pharmacies-nearby | Query: medicine=Prandial+M+0.3+Tablet&lat=11.058765500000002&lon=76.98780916666666
+2026-03-08 23:40:49,404 - go-pharmacy - INFO - Finding nearby pharmacies for medicine: Prandial M 0.3 Tablet at (11.058765500000002, 76.98780916666666) within 5km
+2026-03-08 23:40:49,628 - go-pharmacy - INFO - <-- Outgoing API Response: GET /api/pharmacies-nearby | Status: 200 | Time: 0.226s
+2026-03-08 23:42:37,370 - go-pharmacy - INFO - --> Incoming API Request: GET /api/search-medicine | Query: q=dolo
+2026-03-08 23:42:37,370 - go-pharmacy - INFO - Medicine search query: dolo
+2026-03-08 23:42:37,419 - go-pharmacy - INFO - <-- Outgoing API Response: GET /api/search-medicine | Status: 200 | Time: 0.049s
+2026-03-08 23:42:37,425 - go-pharmacy - INFO - --> Incoming API Request: GET /api/pharmacies-nearby | Query: medicine=Katadol+Capsule&lat=11.05878860686935&lon=76.98777704914237
+2026-03-08 23:42:37,426 - go-pharmacy - INFO - Finding nearby pharmacies for medicine: Katadol Capsule at (11.05878860686935, 76.98777704914237) within 5km
+2026-03-08 23:42:37,627 - go-pharmacy - INFO - <-- Outgoing API Response: GET /api/pharmacies-nearby | Status: 200 | Time: 0.202s
+2026-03-08 23:42:59,910 - go-pharmacy - INFO - --> Incoming API Request: GET /api/search-medicine | Query: q=atarax
+2026-03-08 23:42:59,911 - go-pharmacy - INFO - Medicine search query: atarax
+2026-03-08 23:42:59,953 - go-pharmacy - INFO - <-- Outgoing API Response: GET /api/search-medicine | Status: 200 | Time: 0.043s
+2026-03-08 23:42:59,958 - go-pharmacy - INFO - --> Incoming API Request: GET /api/pharmacies-nearby | Query: medicine=Atarax+25mg+Tablet&lat=11.05878860686935&lon=76.98777704914237
+2026-03-08 23:42:59,959 - go-pharmacy - INFO - Finding nearby pharmacies for medicine: Atarax 25mg Tablet at (11.05878860686935, 76.98777704914237) within 5km
+2026-03-08 23:43:00,279 - go-pharmacy - INFO - <-- Outgoing API Response: GET /api/pharmacies-nearby | Status: 200 | Time: 0.322s
+2026-03-08 23:43:09,851 - go-pharmacy - INFO - --> Incoming API Request: GET /api/symptom-search | Query: symptoms=fever
+2026-03-08 23:43:09,854 - go-pharmacy - INFO - Symptom search query: fever
+2026-03-08 23:43:09,855 - go-pharmacy - INFO - Loading BAAI/bge-small-en-v1.5 model for symptom search...
+2026-03-08 23:43:15,964 - go-pharmacy - INFO - Symptom search query: fever
+2026-03-08 23:43:17,044 - go-pharmacy - INFO - Found 5 matches in Qdrant.
+2026-03-08 23:43:17,045 - go-pharmacy - INFO - <-- Outgoing API Response: GET /api/symptom-search | Status: 200 | Time: 7.194s
+2026-03-08 23:43:17,051 - go-pharmacy - INFO - --> Incoming API Request: GET /api/pharmacies-nearby | Query: medicine=Admol+Junior+125mg+Tablet&lat=11.05878860686935&lon=76.98777704914237
+2026-03-08 23:43:17,052 - go-pharmacy - INFO - Finding nearby pharmacies for medicine: Admol Junior 125mg Tablet at (11.05878860686935, 76.98777704914237) within 5km
+2026-03-08 23:43:17,692 - go-pharmacy - INFO - <-- Outgoing API Response: GET /api/pharmacies-nearby | Status: 200 | Time: 0.642s
+2026-03-08 23:50:25,784 - go-pharmacy - INFO - --> Incoming API Request: GET /api/search-medicine | Query: q=atarax
+2026-03-08 23:50:25,785 - go-pharmacy - INFO - Medicine search query: atarax
+2026-03-08 23:50:25,839 - go-pharmacy - INFO - <-- Outgoing API Response: GET /api/search-medicine | Status: 200 | Time: 0.055s
+2026-03-08 23:50:25,843 - go-pharmacy - INFO - --> Incoming API Request: GET /api/pharmacies-nearby | Query: medicine=Atarax+25mg+Tablet&lat=11.058749550471397&lon=76.987694920784
+2026-03-08 23:50:25,845 - go-pharmacy - INFO - Finding nearby pharmacies for medicine: Atarax 25mg Tablet at (11.058749550471397, 76.987694920784) within 5km
+2026-03-08 23:50:26,124 - go-pharmacy - INFO - <-- Outgoing API Response: GET /api/pharmacies-nearby | Status: 200 | Time: 0.280s
+2026-03-08 23:50:55,255 - go-pharmacy - INFO - --> Incoming API Request: GET /api/symptom-search | Query: symptoms=fever
+2026-03-08 23:50:55,256 - go-pharmacy - INFO - Symptom search query: fever
+2026-03-08 23:50:55,257 - go-pharmacy - INFO - Symptom search query: fever
+2026-03-08 23:50:56,309 - go-pharmacy - INFO - Found 5 matches in Qdrant.
+2026-03-08 23:50:56,313 - go-pharmacy - INFO - <-- Outgoing API Response: GET /api/symptom-search | Status: 200 | Time: 1.057s
+2026-03-08 23:50:56,323 - go-pharmacy - INFO - --> Incoming API Request: GET /api/pharmacies-nearby | Query: medicine=Admol+Junior+125mg+Tablet&lat=11.058749550471397&lon=76.987694920784
+2026-03-08 23:50:56,327 - go-pharmacy - INFO - Finding nearby pharmacies for medicine: Admol Junior 125mg Tablet at (11.058749550471397, 76.987694920784) within 5km
+2026-03-08 23:50:56,484 - go-pharmacy - INFO - <-- Outgoing API Response: GET /api/pharmacies-nearby | Status: 200 | Time: 0.161s
+2026-03-08 23:51:13,469 - go-pharmacy - INFO - --> Incoming API Request: POST /api/tablet-photo | Query: 
+2026-03-08 23:51:13,471 - go-pharmacy - INFO - Processing tablet photo upload: avastin.jpg
+2026-03-08 23:51:16,270 - go-pharmacy - INFO - Identifying tablet image...
+2026-03-08 23:51:17,242 - go-pharmacy - INFO - <-- Outgoing API Response: POST /api/tablet-photo | Status: 200 | Time: 3.773s
+2026-03-08 23:51:17,251 - go-pharmacy - INFO - --> Incoming API Request: GET /api/search-medicine | Query: q=Prandial+M+0.3+Tablet
+2026-03-08 23:51:17,252 - go-pharmacy - INFO - Medicine search query: Prandial M 0.3 Tablet
+2026-03-08 23:51:17,355 - go-pharmacy - INFO - <-- Outgoing API Response: GET /api/search-medicine | Status: 200 | Time: 0.104s
+2026-03-08 23:51:17,363 - go-pharmacy - INFO - --> Incoming API Request: GET /api/pharmacies-nearby | Query: medicine=Prandial+M+0.3+Tablet&lat=11.058749550471397&lon=76.987694920784
+2026-03-08 23:51:17,367 - go-pharmacy - INFO - Finding nearby pharmacies for medicine: Prandial M 0.3 Tablet at (11.058749550471397, 76.987694920784) within 5km
+2026-03-08 23:51:17,689 - go-pharmacy - INFO - <-- Outgoing API Response: GET /api/pharmacies-nearby | Status: 200 | Time: 0.326s
